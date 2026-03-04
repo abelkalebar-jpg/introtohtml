@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backbook Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-wrapper">
+            <div class="signup-header">
+                <h1>Backbook</h1>
+                <p>Connect with friends and the world around you on Backbook.</p>
+            </div>
+
+            <form class="signup-form" method="post" action="submit">
+                <div class="name-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="First name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Last name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Email address" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" placeholder="New password" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="label-text">Birthday</label>
+                    <div class="date-row">
+                        <select required>
+                            <option value="">Month</option>
+                            <option value="1">Jan</option>
+                            <option value="2">Feb</option>
+                            <option value="3">Mar</option>
+                            <option value="4">Apr</option>
+                            <option value="5">May</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Jul</option>
+                            <option value="8">Aug</option>
+                            <option value="9">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                        </select>
+                        <select required>
+                            <option value="">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <select required>
+                            <option value="">Year</option>
+                            <option value="2010">2010</option>
+                            <option value="2005">2005</option>
+                            <option value="2000">2000</option>
+                            <option value="1995">1995</option>
+                            <option value="1990">1990</option>
+                            <option value="1985">1985</option>
+                            <option value="1980">1980</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label-text">Gender</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
